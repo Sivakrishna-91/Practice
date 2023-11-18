@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<h2>The onloadstart Event</h2>
+
+<video controls onloadstart="myFunction()" width="700" height="500">
+  <source src="pexels01.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support video playback.
+</video>
+
+<p id="demo">Event has fired: </p>
+
+<p>Video courtesy of <a href="pexels01.mp4" target="_blank" >pexels01</a>.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Loading has started";
+}
+</script>
+
+</body> 
+</html>

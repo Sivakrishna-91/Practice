@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Events</title>
-    </head>
-    <body>
-        <label>On</label>
-    </body>
+<body>
+<
+<h2>onmouseover Event</h2>
+
+<button id="demo">Click Here</button>
+
+<script>
+document.getElementById("demo").onmouseover = function() {mouseOver()};
+document.getElementById("demo").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+</script>
+
+</body>
 </html>
